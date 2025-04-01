@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web Cơ Bản</title>
+    <!-- Link Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../static/css/header-footer.css">
+    <link rel="stylesheet" href="../static/css/body.css">
+    <link href="https://fonts.googleapis.com/css2?family=KoHo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui/1.13.2/jquery-ui.min.js"></script>
+</head>
+<body>
+<!-- Header -->
+
+
+<!-- Main Content (Homepage) -->
+<main class="py-0" >
+<!--Header-->
+    <header class="header-root text-white py-1" >
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center col-12">
+                <div class="header-content-left col-3" >
+                    <a href="/vi">
+                        <img src="../static/img/logo-white.png" alt="logo" height="50">
+                    </a>
+                </div>
+                <div class="header-content-right col-9 d-flex justify-content-end flex-column align-items-end px-0 ">
+
+                    <div class="nav d-flex justify-content-between align-items-center mb-2 px-2">
+                        <div class="nav-item d-flex justify-content-between align-items-center">
+                            <i class="fa-solid fa-headphones-simple"></i>
+                            <a class="nav-link text-white" href="#">Hỗ trợ</a>
+                        </div>
+                        <div class="nav-item d-flex justify-content-between align-items-center">
+                            <i class="fa-solid fa-user" style="color: red">
+                            </i><a class="nav-link text-white" href="#">Đăng kí</a>
+                        </div>
+                        <span style="font-weight: bold; color: #ffffff; margin-left:7px;" >|</span>
+                        <div class="nav-item" style="margin-left: 3px;"><a class="nav-link text-white" href="#" >Đăng nhập</a></div>
+                        <div class="dropdown">
+                            <button class="dropdown-toggle" style="border: solid 1px #fff; border-radius: 3px; background: transparent; color: #ffffff; font-weight: 700;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Tiếng Việt
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">English</a></li>
+                                <li><a class="dropdown-item" href="#">France</a></li>
+                                <li><a class="dropdown-item" href="#">한국어 (o)</a></li>
+                                <li><a class="dropdown-item" href="#">日本語</a></li>
+                                <li><a class="dropdown-item" href="#">ภาษาไทย</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav-item d-flex justify-content-between align-items-center">
+                        <ul class="nav">
+                            <li class="nav-item-select"><a class="nav-link text-white" href="#">CHUYẾN BAY CỦA TÔI</a></li>
+                            <li class="nav-item-select"><a class="nav-link text-white" href="#">CHECK-IN</a></li>
+                            <li class="nav-item-select"><a class="nav-link text-white" href="#">DỊCH VỤ CHUYẾN BAY</a></li>
+                            <li class="nav-item-select"><a class="nav-link text-white" href="#">DỊCH VỤ TÀI CHÍNH</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+<!--Banner slide-->
+    <div class="container-fluid" style="top: 0; left: 0; right: 0; bottom: 0;">
+        <div class="row">
+            <div id="carouselExampleIndicators" class="carousel slide col-12 " data-bs-ride="carousel" style="padding:0; z-index: 1; ">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../static/img/banner01.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../static/img/banner02.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../static/img/banner03.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../static/img/banner04.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../static/img/banner05.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../static/img/banner06.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../static/img/banner07.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../static/img/banner08.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../static/img/banner09.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+<!--Content-->
+            <div class="banner-02 col-12" style="margin-top: -80px; z-index: 2" >
+            </div>
+        </div>
+    </div>
+    <!--Form-search-->
+    <div class="container mt-5 position-absolute" style="max-width: 380px; right: 10%; top: 13%; z-index: 5;">
+        <div class="d-flex justify-content-center align-items-center">
+            <button class="btn select-btn-right">
+                <a style="color: inherit; text-decoration: none" href="#">Mua hành lý, suất ăn, chọn chỗ ngồi và hơn thế nữa...</a>
+            </button>
+            <button class="btn select-btn-left">
+                <a style="color: inherit; text-decoration: none"  href="#">Gửi hàng nhanh</a>
+            </button>
+        </div>
+        <form class="booking-form" style="padding: 8px;">
+            <div class="mb-3">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="tripType" checked>
+                    <label class="form-check-label"><i class="fa-solid fa-repeat"></i> Khứ hồi</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="tripType">
+                    <label class="form-check-label"><i class="fa-solid fa-arrow-right"></i> Một chiều</label>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <div class="input-group" style="width: 55%;">
+                    <span class="input-group-text"><i class="fa-solid fa-plane-departure"></i></span>
+                    <input class="form-control" list="departure-area" id="departure" placeholder="Điểm khởi hành">
+                    <datalist id="departure-area">
+                        <option value="San Francisco San Francisco San Francisco San Francisco ">
+                        <option value="New York San Francisco San Francisco ">
+                        <option value="Seattle">
+                        <option value="Los Angeles">
+                        <option value="Chicago">
+                    </datalist>
+                </div>
+                <div class="input-group" style="width: 45%;">
+                    <input type="date" class="form-control" id="departure-date" placeholder="Ngày đi" style="border-radius: 0 5px 5px 0;">
+                </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <div class="input-group" style="width: 55%;">
+                    <span class="input-group-text"><i class="fa-solid fa-plane-arrival"></i></span>
+                    <input class="form-control" list="destination-area" id="destination" placeholder="Điểm đến">
+                    <datalist id="destination-area" class="w-100">
+                        <option value="San Francisco">
+                        <option value="New York">
+                        <option value="Seattle">
+                        <option value="Los Angeles">
+                        <option value="Chicago">
+                    </datalist>
+                </div>
+                <div class="input-group" style="width: 45%;">
+                    <input type="date" class="form-control" id="return-date" placeholder="Ngày về" style="border-radius: 0 5px 5px 0;">
+                </div>
+            </div>
+            <div class="mb-3">
+                <div class="input-group">
+                    <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
+                    <select class="form-select">
+                        <option>1 người lớn</option>
+                        <option>2 người lớn</option>
+                        <option>3 người lớn</option>
+                    </select>
+                </div>
+            </div>
+            <div class="mb-3">
+                <div class="input-group">
+                    <span class="input-group-text"><i class="fa-solid fa-ticket"></i></span>
+                    <input type="text" class="form-control" placeholder="Mã khuyến mãi">
+                </div>
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="cheapTickets">
+                <label class="form-check-label" for="cheapTickets"><i class="fa-solid fa-tag"></i> Tìm vé rẻ nhất</label>
+            </div>
+            <button class="btn btn-custom w-100" style="font-style: italic;"><i class="fa-solid fa-search"></i> Tìm chuyến bay</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+
+
+</main>
+
+
+<!-- Bootstrap 5 JS và Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
