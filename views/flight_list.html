@@ -56,7 +56,6 @@
                     </a>
                 </div>
                 <div class="header-content-right col-9 d-flex justify-content-end flex-column align-items-end px-0 ">
-
                     <div class="nav d-flex justify-content-between align-items-center mb-2 px-2">
                         <div class="nav-item d-flex justify-content-between align-items-center">
                             <i class="fa-solid fa-headphones-simple"></i>
@@ -100,7 +99,7 @@
         </div>
         </div>
     </header>
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <nav class="navbar navbar-expand-lg bg-dark nav-sub">
         <div class="container">
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
@@ -130,13 +129,13 @@
             <div class="row">
                 <!-- Nội dung chính -->
                 <div class="col-lg-9 content">
-                    <h2>Chọn vé cho chiều đi</h2>
-                    <p>Danh sách chuyến bay từ TP Hồ Chí Minh đến Hà Nội</p>
+                    <h2 style="font-weight: 500;">Chọn vé cho chiều đi</h2>
+                    <p>Danh sách chuyến bay từ: TP Hồ Chí Minh <i class="fa-solid fa-plane"></i> Hà Nội</p>
                     <p>Hiển thị các chuyến bay tìm được...</p>
                     <p>Thứ 4 - Ngày 17/02/2020</p>
                     <!-- Danh sách chuyến bay -->
                     <table class="table table-bordered">
-                        <thead class="table-dark">
+                        <thead class="tb-head">
                         <tr>
                             <th>Hãng</th>
                             <th>Mã chuyến bay</th>
@@ -153,7 +152,7 @@
                             <td>08:00 - 10:00</td>
                             <td>1.200.000đ</td>
                             <td>
-                                <button class="btn btn-primary" data-bs-toggle="modal"
+                                <button class="btn btn-detail" data-bs-toggle="modal"
                                         data-bs-target="#detailModal">
                                     Chi Tiết
                                 </button>
@@ -168,7 +167,7 @@
                             <td>12:30 - 14:15</td>
                             <td>950.000đ</td>
                             <td>
-                                <button class="btn btn-primary" data-bs-toggle="modal"
+                                <button class="btn btn-detail" data-bs-toggle="modal"
                                         data-bs-target="#detailModal">
                                     Chi Tiết
                                 </button>
@@ -180,13 +179,13 @@
                         </tbody>
                     </table>
 
-                    <h2>Chọn vé cho chiều về</h2>
-                    <p>Danh sách chuyến bay từ Hà Nội đến TP Hồ Chí Minh</p>
+                    <h2 style="font-weight: 500;">Chọn vé cho chiều về</h2>
+                    <p>Danh sách chuyến bay từ: Hà Nội <i class="fa-solid fa-plane"></i> TP Hồ Chí Minh</p>
                     <p>Hiển thị các chuyến bay tìm được...</p>
                     <p>Thứ 4 - Ngày 17/02/2020</p>
                     <!-- Danh sách chuyến bay -->
                     <table class="table table-bordered">
-                        <thead class="table-dark">
+                        <thead class="tb-head">
                         <tr>
                             <th>Hãng</th>
                             <th>Mã chuyến bay</th>
@@ -203,7 +202,7 @@
                             <td>08:00 - 10:00</td>
                             <td>1.200.000đ</td>
                             <td>
-                                <button class="btn btn-primary" data-bs-toggle="modal"
+                                <button class="btn btn-detail" data-bs-toggle="modal"
                                         data-bs-target="#detailModal">
                                     Chi Tiết
                                 </button>
@@ -218,7 +217,7 @@
                             <td>12:30 - 14:15</td>
                             <td>950.000đ</td>
                             <td>
-                                <button class="btn btn-primary" data-bs-toggle="modal"
+                                <button class="btn btn-detail" data-bs-toggle="modal"
                                         data-bs-target="#detailModal">
                                     Chi Tiết
                                 </button>
@@ -229,11 +228,11 @@
                         </tr>
                         </tbody>
                     </table>
-                    <button class="btn btn-success" data-bs-toggle="modal"
+                    <button class="btn btn-detail" data-bs-toggle="modal"
                             data-bs-target="#flightDetailsModal">Xác nhận</button>
                 </div>
                 <div class="col-lg-3 sidebar" style="border: 1px solid black ">
-                    <h4>Sắp xếp</h4>
+                    <h4 style="font-weight: 600;">Sắp xếp</h4>
                     <div class="sort-box">
                         <label><input type="radio" name="option" value="1"> Đề xuất</label><br>
                         <label><input type="radio" name="option" value="2"> Giá (Thấp đến cao) </label><br>
@@ -241,7 +240,7 @@
                         <label><input type="radio" name="option" value="4"> Hãng hàng không </label><br>
                     </div>
                     <div class="search-box">
-                        <h4>Tìm chuyến bay</h4>
+                        <h4 style="font-weight: 600;">Tìm chuyến bay</h4>
                         <form>
                             <div class="mb-3">
                                 <label for="from" class="form-label">Điểm đi</label>
@@ -300,7 +299,7 @@
                                 </div>
                             </div>
 
-                            <button type="submit" class="btn btn-success w-100">Tìm chuyến bay</button>
+                            <button type="submit" class="btn btn-detail w-100">Tìm chuyến bay</button>
                         </form>
                     </div>
                 </div>

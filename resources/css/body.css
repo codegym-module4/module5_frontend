@@ -107,3 +107,16 @@ footer{
 /*#passengerInput {*/
 /*    width: 340px;*/
 /*}*/
+.tb-head{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.095) 100%);
+    background: #CA161C;
+    color: #FFFFFF;
+}
+
+.btn-detail{
+    background: linear-gradient(26.73deg, #F9A51A 13.7%, #FBB612 29.8%, #FFDD00 66.81%);
+    border-radius: 10px;
+}
+.nav-sub{
+    background: linear-gradient(28.91deg, #F9A51A 2.24%, #FBB612 31.03%, #FBF300 97.21%);
+}
