@@ -1,0 +1,107 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>A Web Page</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    </head>
+    <body class="bg-gray-100 p-4">
+    <div class="max-w-4xl mx-auto bg-white border border-gray-300 p-4">
+        <h1 class="text-center font-bold mb-4">Tạo Báo Cáo</h1>
+        <div class="border border-gray-300 p-4">
+            <div class="mb-4">
+                <label class="block mb-2">Chọn kiểu</label>
+                <select class="border border-gray-300 p-2 w-full">
+                    <option>Circle</option>
+                    <option>Bar</option>
+                    <option>Line</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <label class="block mb-2">Chọn loại</label>
+                <select class="border border-gray-300 p-2 w-full">
+                    <option>Doanh Thu</option>
+                    <option>Nhân viên</option>
+                    <option>Hãng máy bay</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <label class="block mb-2">Thời gian</label>
+
+                <!-- Chọn nhanh -->
+                <div class="flex items-center space-x-2">
+                    <input type="radio" name="time" class="mr-2" id="quickSelect" checked>
+                    <select id="quickSelectDropdown" class="border border-gray-300 p-2">
+                        <option>Hôm qua</option>
+                        <option>Tuần này</option>
+                        <option>Tháng này</option>
+                        <option>Năm này</option>
+                    </select>
+                </div>
+
+                <!-- Chọn ngày cụ thể -->
+                <div class="flex items-center space-x-2 mt-2">
+                    <input type="radio" name="time" class="mr-2" id="customDate">
+                    <input type="date" class="border border-gray-300 p-2" id="startDate" disabled>
+                    <span>Đến</span>
+                    <input type="date" class="border border-gray-300 p-2" id="endDate" disabled>
+                </div>
+            </div>
+
+            </div>
+            <div class="mb-4">
+                <label class="block mb-2">So sánh với:</label>
+                <!-- Chọn nhanh -->
+                <div class="flex items-center space-x-2">
+                    <input type="radio" name="time_compared" class="mr-2" id="quickSelect2" checked>
+                    <select id="quickSelectDropdown2" class="border border-gray-300 p-2">
+                        <option>Hôm qua</option>
+                        <option>Tuần này</option>
+                        <option>Tháng này</option>
+                        <option>Năm này</option>
+                    </select>
+                </div>
+
+                <!-- Chọn ngày cụ thể -->
+                <div class="flex items-center space-x-2 mt-2">
+                    <input type="radio" name="time_compared" class="mr-2" id="customDate2">
+                    <input type="date" class="border border-gray-300 p-2" id="startDate2" disabled>
+                    <span>Đến</span>
+                    <input type="date" class="border border-gray-300 p-2" id="endDate2" disabled>
+                </div>
+            </div>
+            <div class="text-center">
+                <button class="border border-gray-300 p-2">Xem</button>
+            </div>
+        </div>
+    </div>
+    </body>
+
+    <script>
+        document.getElementById("quickSelect").addEventListener("change", function () {
+            document.getElementById("quickSelectDropdown").disabled = false;
+            document.getElementById("startDate").disabled = true;
+            document.getElementById("endDate").disabled = true;
+        });
+
+        document.getElementById("customDate").addEventListener("change", function () {
+            document.getElementById("quickSelectDropdown").disabled = true;
+            document.getElementById("startDate").disabled = false;
+            document.getElementById("endDate").disabled = false;
+        });
+
+        document.getElementById("quickSelect2").addEventListener("change", function () {
+            document.getElementById("quickSelectDropdown2").disabled = false;
+            document.getElementById("startDate2").disabled = true;
+            document.getElementById("endDate2").disabled = true;
+        });
+
+        document.getElementById("customDate2").addEventListener("change", function () {
+            document.getElementById("quickSelectDropdown2").disabled = true;
+            document.getElementById("startDate2").disabled = false;
+            document.getElementById("endDate2").disabled = false;
+        });
+    </script>
+    </html>
