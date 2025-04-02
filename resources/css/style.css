@@ -104,7 +104,7 @@ LESS
   padding: 20px 0;
   color: #FFF;
   text-align: center;
-  background-color: #cc0000;
+  background-color: #CA161C;
 }
 @media screen and (max-width: 480px) {
   .mypage_block .mypage_nav li a {
@@ -137,15 +137,15 @@ LESS
   padding: 10px;
   font-size: 1.25rem;
   margin-bottom: 20px;
-  background-color: #cc0000;
+  background-color: #CA161C;
 }
 .mypage_block.user_info .user_info a,
 .mypage_block.user_payment .user_payment a,
 .mypage_block.user_tranfer_history .user_tranfer_history a,
 .mypage_block.user_change_password .user_change_password a {
   background-color: #FFF;
-  color: #cc0000;
-  border: 1px solid #cc0000;
+  color: #CA161C;
+  border: 1px solid #CA161C;
 }
 .mypage_news {
   margin-bottom: 40px;
