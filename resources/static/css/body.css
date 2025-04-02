@@ -61,6 +61,7 @@ footer{
     border-radius: 10px;
     color: black;
     font-weight: bold;
+    font-style: italic;
 }
 .select-btn-left{
     background: linear-gradient(20.12deg, rgba(217, 26, 33, 0.8) 19.6%, rgba(111, 0, 0, 0.8) 93.86%);
@@ -98,3 +99,11 @@ footer{
     top: 13%;
     z-index: 5;
 }
+
+.dropdown-menu {
+    width: 88%;
+    padding: 15px;
+}
+/*#passengerInput {*/
+/*    width: 340px;*/
+/*}*/
