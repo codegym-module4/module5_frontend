@@ -21,13 +21,12 @@
 
         /* nút xuất file */
         .export-button-container {
-            position: fixed; /* Đặt vị trí cố định */
-            top: 100px; /* Khoảng cách từ trên cùng */
-            right: 200px; /* Khoảng cách từ bên phải */
-            z-index: 1000; /* Đảm bảo nút luôn ở trên cùng */
+            position: fixed;
+            top: 100px;
+            right: 200px;
+            z-index: 1000;
         }
 
-        /* Nút xuất file */
         .export-button {
             padding: 10px 20px;
             background-color: #4CAF50;
@@ -39,22 +38,20 @@
         }
 
         .export-button:hover {
-            background-color: #45a049; /* Màu khi di chuột */
+            background-color: #45a049;
         }
 
         .export-button:active {
-            background-color: #388e3c; /* Màu khi click */
+            background-color: #388e3c;
         }
     </style>
 </head>
 <body>
 
-<!-- biểu đồ -->
 <div class="chart-container">
     <canvas id="revenueChart" height="600px"></canvas>
 </div>
 
-<!-- nút xuất file -->
 <div class="export-button-container">
     <button class="export-button">Xuất File</button>
 </div>
@@ -62,24 +59,17 @@
 <script>
     var ctx = document.getElementById('revenueChart').getContext('2d');
     var revenueChart = new Chart(ctx, {
-        type: 'bar',
+        type: 'line',
         data: {
             labels: ['01/03', '05/03', '10/03', '15/03', '20/03', '25/03', '30/03'],
             datasets: [
                 {
-                    label: 'Nhân viên A',
+                    label: 'Doanh thu (VND)',
                     data: [5000000, 7000000, 8000000, 6500000, 7200000, 8500000, 9000000],
-                    backgroundColor: 'blue'
-                },
-                {
-                    label: 'Nhân viên B',
-                    data: [6000000, 7500000, 8500000, 7000000, 7400000, 8700000, 9500000],
-                    backgroundColor: 'green'
-                },
-                {
-                    label: 'Nhân viên C',
-                    data: [5500000, 7200000, 8100000, 6700000, 7100000, 8300000, 9100000],
-                    backgroundColor: 'red'
+                    borderColor: 'blue',
+                    borderWidth: 2,
+                    pointRadius: 4,
+                    fill: false
                 }
             ]
         },
@@ -88,12 +78,12 @@
             maintainAspectRatio: false,
             layout: {
                 padding: {
-                    top: 150, // Giảm khoảng cách trên cùng
+                    top: 150,
                 }
             },
             scales: {
-                x: { ticks: { font: { size: 12 } } }, // Giảm font trục X
-                y: { ticks: { font: { size: 12 } } }  // Giảm font trục Y
+                x: { ticks: { font: { size: 12 } } },
+                y: { ticks: { font: { size: 12 } } }
             }
         }
     });
