@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang Web Cơ Bản</title>
+    <title>Vietjet Air | Bay là thích ngay | Website chính thức</title>
     <!-- Link Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -16,8 +16,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui/1.13.2/jquery-ui.min.js"></script>
 </head>
 <body>
-<!-- Header -->
-
 
 <!-- Main Content (Homepage) -->
 <main class="py-0" >
@@ -118,7 +116,7 @@
     </div>
 
 <!--Form-search-->
-    <div class="container mt-5 position-absolute" style="max-width: 380px; right: 10%; top: 13%; z-index: 5;">
+    <div class="form-search container mt-5 position-absolute">
         <div class="d-flex justify-content-center align-items-center">
             <button class="btn select-btn-right">
                 <a style="color: inherit; text-decoration: none" href="#">Mua hành lý, suất ăn, chọn chỗ ngồi và hơn thế nữa...</a>
@@ -130,13 +128,14 @@
         <form class="booking-form" style="padding: 8px;">
             <div class="mb-3">
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="tripType" checked>
+                    <input id="round-trip" class="form-check-input" type="radio" name="tripType" checked>
                     <label class="form-check-label"><i class="fa-solid fa-repeat"></i> Khứ hồi</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="tripType">
+                    <input id="one-way" class="form-check-input" type="radio" name="tripType">
                     <label class="form-check-label"><i class="fa-solid fa-arrow-right"></i> Một chiều</label>
                 </div>
+                <span style="font-weight: 600; margin-left: 40px;">VND<i class="fa-solid fa-caret-down" style="margin-left: 3px;" ></i></span>
             </div>
             <div class="d-flex justify-content-between align-items-center mb-3">
                 <div class="input-group" style="width: 55%;">
@@ -154,7 +153,7 @@
                     <input type="date" class="form-control" id="departure-date" placeholder="Ngày đi" style="border-radius: 0 5px 5px 0;">
                 </div>
             </div>
-            <div class="d-flex justify-content-between align-items-center mb-3">
+            <div class="destination-round-trip d-flex justify-content-between align-items-center mb-3 d-block">
                 <div class="input-group" style="width: 55%;">
                     <span class="input-group-text"><i class="fa-solid fa-plane-arrival"></i></span>
                     <input class="form-control" list="destination-area" id="destination" placeholder="Điểm đến">
@@ -170,6 +169,20 @@
                     <input type="date" class="form-control" id="return-date" placeholder="Ngày về" style="border-radius: 0 5px 5px 0;">
                 </div>
             </div>
+            <div class="destination-one-way d-flex justify-content-between align-items-center mb-3 d-none">
+                <div class="input-group">
+                    <span class="input-group-text"><i class="fa-solid fa-location-dot"></i></span>
+                    <input class="form-control" list="destination-area" id="destination-one-way" placeholder="Điểm đến">
+                    <datalist id="destination-area-one-way" class="w-100">
+                        <option value="San Francisco">
+                        <option value="New York">
+                        <option value="Seattle">
+                        <option value="Los Angeles">
+                        <option value="Chicago">
+                    </datalist>
+                </div>
+            </div>
+
             <div class="mb-3">
                 <div class="input-group">
                     <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
@@ -194,13 +207,12 @@
         </form>
     </div>
 
-<!--Hot deal serice-->
-    <div class="col-12 d-flex justify-content-center align-items-center mb-3 position-absolute" style="gap:90px; top: 122%;
-    z-index: 9;">
+<!--Hot deal service-->
+    <div class="hot-deal-list col-12 d-flex justify-content-center align-items-center mb-3 position-absolute">
         <a class="hot-deal-link" href="#">
         <div class="d-flex justify-content-center align-items-center flex-column ">
-            <h6 style="color: rgb(51, 51, 51); font-weight: 700;">Từ
-                <span style="color: #EC2029;">Hà Nội</span>
+            <h6 class="title-hot-deal">Từ
+                <span>Hà Nội</span>
             </h6>
             <div class="d-flex justify-content-center align-items-center flex-column position-relative">
             <img src="../static/img/bg-fare.png" alt="bg-fare" style="display: block; width: 120px; height: auto;">
@@ -210,16 +222,16 @@
                     <p class="mb-0" style="color: rgb(51, 51, 51); font-style: italic">VND</p>
                 </div>
             </div>
-            <h6 style="color: rgb(51, 51, 51); font-weight: 700;">Đến
-                <span style="color: #EC2029;" >Melboure</span>
+            <h6 class="title-hot-deal">Đến
+                <span>Melboure</span>
             </h6>
         </div>
         </a>
 
         <a class="hot-deal-link" href="#">
             <div class="d-flex justify-content-center align-items-center flex-column ">
-                <h6 style="color: rgb(51, 51, 51); font-weight: 700;">Từ
-                    <span style="color: #EC2029;">Hà Nội</span>
+                <h6 class="title-hot-deal">Từ
+                    <span>Hà Nội</span>
                 </h6>
                 <div class="d-flex justify-content-center align-items-center flex-column position-relative">
                     <img src="../static/img/bg-fare.png" alt="bg-fare" style="display: block; width: 120px; height: auto;">
@@ -229,16 +241,16 @@
                         <p class="mb-0" style="color: rgb(51, 51, 51); font-style: italic">VND</p>
                     </div>
                 </div>
-                <h6 style="color: rgb(51, 51, 51); font-weight: 700;">Đến
-                    <span style="color: #EC2029;" >Sydney</span>
+                <h6 class="title-hot-deal">Đến
+                    <span>Sydney</span>
                 </h6>
             </div>
         </a>
 
         <a class="hot-deal-link" href="#">
             <div class="d-flex justify-content-center align-items-center flex-column ">
-                <h6 style="color: rgb(51, 51, 51); font-weight: 700;">Từ
-                    <span style="color: #EC2029;">Đà Nẵng</span>
+                <h6 class="title-hot-deal">Từ
+                    <span>Đà Nẵng</span>
                 </h6>
                 <div class="d-flex justify-content-center align-items-center flex-column position-relative">
                     <img src="../static/img/bg-fare.png" alt="bg-fare" style="display: block; width: 120px; height: auto;">
@@ -248,16 +260,16 @@
                         <p class="mb-0" style="color: rgb(51, 51, 51); font-style: italic">VND</p>
                     </div>
                 </div>
-                <h6 style="color: rgb(51, 51, 51); font-weight: 700;">Đến
-                    <span style="color: #EC2029;" >Ahmedabad</span>
+                <h6 class="title-hot-deal">Đến
+                    <span>Ahmedabad</span>
                 </h6>
             </div>
         </a>
 
         <a class="hot-deal-link" href="#">
             <div class="d-flex justify-content-center align-items-center flex-column ">
-                <h6 style="color: rgb(51, 51, 51); font-weight: 700;">Từ
-                    <span style="color: #EC2029;">Tp. Hồ Chí Minh</span>
+                <h6 class="title-hot-deal">Từ
+                    <span>Tp. Hồ Chí Minh</span>
                 </h6>
                 <div class="d-flex justify-content-center align-items-center flex-column position-relative">
                     <img src="../static/img/bg-fare.png" alt="bg-fare" style="display: block; width: 120px; height: auto;">
@@ -267,16 +279,16 @@
                         <p class="mb-0" style="color: rgb(51, 51, 51); font-style: italic">VND</p>
                     </div>
                 </div>
-                <h6 style="color: rgb(51, 51, 51); font-weight: 700;">Đến
-                    <span style="color: #EC2029;" >Bắc Kinh</span>
+                <h6 class="title-hot-deal">Đến
+                    <span>Bắc Kinh</span>
                 </h6>
             </div>
         </a>
 
         <a class="hot-deal-link" href="#">
             <div class="d-flex justify-content-center align-items-center flex-column ">
-                <h6 style="color: rgb(51, 51, 51); font-weight: 700;">Từ
-                    <span style="color: #EC2029;">Hà Nội</span>
+                <h6 class="title-hot-deal">Từ
+                    <span>Hà Nội</span>
                 </h6>
                 <div class="d-flex justify-content-center align-items-center flex-column position-relative">
                     <img src="../static/img/bg-fare.png" alt="bg-fare" style="display: block; width: 120px; height: auto;">
@@ -286,8 +298,8 @@
                         <p class="mb-0" style="color: rgb(51, 51, 51); font-style: italic">VND</p>
                     </div>
                 </div>
-                <h6 style="color: rgb(51, 51, 51); font-weight: 700;">Đến
-                    <span style="color: #EC2029;" >Quảng Châu</span>
+                <h6 class="title-hot-deal">Đến
+                    <span>Quảng Châu</span>
                 </h6>
             </div>
         </a>
@@ -369,8 +381,28 @@
 
 </main>
 
-
 <!-- Bootstrap 5 JS và Popper.js -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const roundTripRadio = document.getElementById("round-trip");
+        const oneWayRadio = document.getElementById("one-way");
+        const oneWaySection = document.querySelector(".destination-one-way");
+        const roundTripSection = document.querySelector(".destination-round-trip");
+
+        roundTripRadio.addEventListener("click", function () {
+            oneWaySection.classList.remove("d-block");
+            oneWaySection.classList.add("d-none");
+            roundTripSection.classList.remove("d-none");
+
+        });
+
+        oneWayRadio.addEventListener("click", function () {
+            oneWaySection.classList.remove("d-none");
+            oneWaySection.classList.add("d-block");
+            roundTripSection.classList.add("d-none");
+        });
+    });
+</script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 </body>
