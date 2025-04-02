@@ -107,3 +107,17 @@ footer{
 /*#passengerInput {*/
 /*    width: 340px;*/
 /*}*/
+.desc-root{
+    position: relative;
+    background: linear-gradient(28.91deg, #F9A51A 2.24%, #FBB612 31.03%, #FBF300 97.21%);
+    padding-left: 0;
+    padding-right: 0;
+}
+.desc-root span{
+    color: #333333;
+    font-size: 18px;
+}
+.desc-root .area{
+    color: #EC2029;
+    font-weight: 700;
+}
