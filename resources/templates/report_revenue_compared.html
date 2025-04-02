@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Revenue Chart</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .chart-container {
+      max-width: 900px;
+      margin: auto;
+      padding-top: 30px;
+    }
+    .export-button-container {
+      position: fixed;
+      top: 100px;
+      right: 200px;
+      z-index: 1000;
+    }
+    .export-button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .export-button:hover {
+      background-color: #45a049;
+    }
+    .export-button:active {
+      background-color: #388e3c;
+    }
+  </style>
+</head>
+<body>
+<div class="chart-container">
+  <canvas id="revenueChart"></canvas>
+</div>
+<div class="export-button-container">
+  <button class="export-button" onclick="downloadChart()">Xuất File</button>
+</div>
+<script>
+  var ctx = document.getElementById('revenueChart').getContext('2d');
+  var revenueChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['01/03', '05/03', '10/03', '15/03', '20/03', '25/03', '30/03'],
+      datasets: [
+        {
+          label: 'Nhân viên A',
+          data: [5000000, 7000000, 6000000, 7500000, 8200000, 9000000, 9500000],
+          backgroundColor: 'blue'
+        },
+        {
+          label: 'Nhân viên B',
+          data: [4000000, 6000000, 5500000, 7200000, 7800000, 8500000, 8800000],
+          backgroundColor: 'red'
+        },
+        {
+          label: 'Nhân viên C',
+          data: [4500000, 6500000, 5800000, 7000000, 8000000, 8700000, 9200000],
+          backgroundColor: 'green'
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      scales: {
+        x: { ticks: { font: { size: 12 } } },
+        y: { ticks: { font: { size: 12 } } }
+      }
+    }
+  });
+  function downloadChart() {
+    var link = document.createElement('a');
+    link.href = revenueChart.toBase64Image();
+    link.download = 'revenue_chart.png';
+    link.click();
+  }
+</script>
+</body>
+</html>
