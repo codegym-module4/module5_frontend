@@ -42,6 +42,12 @@ LESS
 /**-----------------------------------------------
 マイページ
 -----------------------------------------------**/
+#content {
+  line-height: 1.2;
+  margin-top: 60px;
+  padding-bottom: 100px;
+  border-bottom: 2px solid #0abab5;
+}
 .section {
   display: block;
   max-width: 1100px;
@@ -133,11 +139,10 @@ LESS
   margin-bottom: 20px;
   background-color: #cc0000;
 }
-.mypage_block.creator_mypage .creator_mypage a,
-.mypage_block.creator_mypage_design .creator_mypage_design a,
-.mypage_block.creator_mypage_design_post .creator_mypage_design_post a,
-.mypage_block.creator_mypage_sales .creator_mypage_sales a,
-.mypage_block.creator_mypage_setting .creator_mypage_setting a {
+.mypage_block.user_info .user_info a,
+.mypage_block.user_payment .user_payment a,
+.mypage_block.user_tranfer_history .user_tranfer_history a,
+.mypage_block.user_change_password .user_change_password a {
   background-color: #FFF;
   color: #cc0000;
   border: 1px solid #cc0000;
@@ -180,7 +185,7 @@ LESS
   /* color: #FFF; */
 }
 .table_style td {
-  padding: 10px;
+  padding: 15px;
   vertical-align: middle;
   border: 1px solid #B2B2B2;
   background-color: #FFF;

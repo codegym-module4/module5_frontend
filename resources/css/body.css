@@ -14,7 +14,7 @@ body{
 
 main{
     height: 100%;
-    background-image: url('../img/background-main.jpg');
+    background-image: url('../resources/img/background-main.jpg');
 }
 .nav-link{
     font-weight:600;
@@ -22,7 +22,7 @@ main{
 .banner-02 {
     width: 100%;
     min-height: 638px;
-    background-image: url('../img/background_02.jpg') ;
+    background-image: url('../resources/img/background_02.jpg') ;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
