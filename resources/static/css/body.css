@@ -1,0 +1,109 @@
+body{
+    line-height: 1.43;
+    font-size: 16px;
+    font-family: KoHo, sans-serif;
+    font-weight: 400;
+    background-color: #fafafa;
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+    scroll-behavior: smooth;
+}
+
+main{
+    height: 100%;
+    background-image: url('../img/background-main.jpg');
+}
+.nav-link{
+    font-weight:600;
+}
+.banner-02 {
+    width: 100%;
+    min-height: 638px;
+    background-image: url('../img/background_02.jpg') ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.icon img{
+    width: 26px;
+    height: 26px;
+}
+footer{
+    background-color: #fafafa;
+    color:#333333
+}
+
+.nav-item-select a.nav-link {
+    transition: background-color 0.3s, color 0.3s;
+    padding: 10px 10px;
+    display: block;
+}
+
+.nav-item-select a.nav-link:hover {
+    background-color: white !important;
+    color: red !important;
+    border-radius: 5px;
+}
+
+.booking-form {
+    background: linear-gradient(30.3deg, rgba(217, 26, 33, 0.73) 33.94%, #6F0000 163.23%);
+    border-radius: 0 0 5px 5px;
+    color: white;
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+}
+.btn-custom {
+    background: linear-gradient(26.73deg, #F9A51A 13.7%, #FBB612 29.8%, #FFDD00 66.81%);
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    font-style: italic;
+}
+.select-btn-left{
+    background: linear-gradient(20.12deg, rgba(217, 26, 33, 0.8) 19.6%, rgba(111, 0, 0, 0.8) 93.86%);
+    font-weight: bold;
+    font-style: italic;
+    color: #ffffff;
+    border-radius: 5px 5px 0 0;
+}
+.select-btn-right{
+    background: linear-gradient(135deg, #FFDD00 39.58%, #E99F24 100%);
+    font-weight: bold;
+    font-style: italic;
+    color: #333333;
+    border-radius: 5px 5px 0 0;
+}
+
+.hot-deal-link{
+    text-decoration: none;
+}
+.title-hot-deal{
+    color: rgb(51, 51, 51); font-weight: 700;
+}
+.title-hot-deal span {
+    color: #EC2029;
+}
+.hot-deal-list{
+    gap:90px;
+    top: 122%;
+    z-index: 9;
+}
+
+.form-search{
+    max-width: 380px;
+    right: 10%;
+    top: 13%;
+    z-index: 5;
+}
+
+.dropdown-menu {
+    width: 88%;
+    padding: 15px;
+}
+/*#passengerInput {*/
+/*    width: 340px;*/
+/*}*/

@@ -1,0 +1,18 @@
+.header-root{
+    /*z-index: 1300;*/
+    width: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.095) 100%);
+    background: #CA161C;
+}
+a{
+    cursor: pointer;
+}
+.nav-link{
+        padding: 0 10px;
+        /*margin-right: 17px;*/
+}
+.footer-root{
+    background-color: rgba(0, 0, 0, 0);
+
+}
+
